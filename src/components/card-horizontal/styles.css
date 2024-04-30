@@ -1,0 +1,34 @@
+
+
+.cart-item{
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+
+  h3{
+    margin: 16px 0;
+  }
+}
+.cart-item-img{
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
+.cart-buttons{
+  width: 226px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minus-button, .plus-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 40px;
+  margin: 0;
+  background-color: #FF5C00;
+  border: none;
+}

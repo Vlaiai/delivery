@@ -1,0 +1,18 @@
+.container-continue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.continue-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 262px;
+  height: 32px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  background-color: #13131B;
+  color: white;
+  cursor: pointer;
+}

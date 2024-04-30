@@ -1,0 +1,28 @@
+.footer-container{
+  margin-top: auto;
+  display: flex;
+  background-color: #13131B;
+  height: 70px;
+  margin-top: 56px;
+  position: relative;
+  padding: 0 80px 0 372px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contacts{
+  color: white;
+  display: flex;
+  gap: 36px;
+  cursor: pointer;
+}
+
+.footer-socials{
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footer-contacts li:hover, .footer-socials li:hover{
+  opacity: 50%;
+}

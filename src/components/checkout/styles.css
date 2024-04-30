@@ -1,0 +1,144 @@
+.order-forms{
+  display: flex;
+  flex-direction: column;
+  gap:36px;
+}
+
+
+
+
+/* INPUT FORM */
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 397px;
+}
+
+.input-form{
+  font-size: 16px;
+  font-family:"Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  color: #13131B;
+  border: none;
+  box-shadow: inset 0 0 0 2px  #13131B;
+  padding: 10px 12px;
+  transition: 100ms ease-out;
+}
+
+.input-form:hover{
+  box-shadow: inset 0 0 0 2px #FF5C00;
+}
+
+.input-form:focus{
+  box-shadow: inset 0 0 0 2px #FF5C00;
+  outline: none;
+}
+
+.input-form:valid{
+  box-shadow: inset 0 0 0 2px #A7A7A7;
+}
+
+
+
+/* Radio */
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap:12px;
+  margin-top: 16px;
+}
+
+.radio {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.radio input[type="radio"] {
+  position: relative;
+  opacity: 0;
+  margin-right: px;
+}
+
+.radio-custom {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-shadow: inset 0 0 0 2px  #13131B;
+  border-radius: 50%;
+}
+
+
+.radio input[type="radio"]:checked + .radio-custom::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 5px  #FF5C00;
+}
+
+
+/* Toggle */
+.container-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle-button{
+  background-color: #13131B;
+  width: 46px;
+  height: 24px;
+  border-radius:24px;
+  cursor: pointer;
+  position: relative;
+  transition: 300ms ease-out;
+}
+
+.toggle-button::before{
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 2px;
+  transition: 300ms ease-out;
+}
+
+.toggle-input:checked + .toggle-button{
+  background-color: #FF5C00;
+}
+
+.toggle-input:checked + .toggle-button::before{
+  transform: translateX(22px)
+}
+
+.toggle-input{
+  display: none;
+}
+
+
+
+@media(max-width:480px){
+  .checkout-section{
+    padding: 0 20px 32px 20px;
+  }
+
+  .order-forms{
+    padding: 0;
+  }
+
+  .input-container{
+    width: 320px;
+    display: flex;
+  }
+}

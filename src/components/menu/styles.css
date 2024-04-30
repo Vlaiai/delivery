@@ -1,0 +1,42 @@
+.left-menu {
+  position: fixed;
+  top: 134px;
+  left: 0;
+  padding-left: 132px;
+  padding-right: 50px;
+  /* bottom: 7; */
+  bottom: 0s;
+  height: 100%;
+  min-width: 160px;
+  background-color: white;
+  z-index: 50;
+  
+  li{
+    /* width: fit-content; */
+    height: 32px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 300ms ease-out;
+  }
+  ul{
+    margin-bottom: 32px;
+  }
+} 
+
+.menu-selected{
+  color: #FF5C00;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 4px;
+}
+
+.left-menu li:hover{
+  color:#FFAB2D;
+}
+
+.left-menu li:active{
+  color:#E00E0E;
+  /* text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 4px; */
+}

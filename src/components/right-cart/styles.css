@@ -1,0 +1,48 @@
+.backdrop{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(19, 19, 27, 0.7);
+  z-index: 200;
+}
+.sidecart{
+  position: fixed;
+  top: 78px;
+  right:0;
+  height: calc(100vh - 78px);
+  width: 493px;
+  background-color: white;
+  z-index: 300;
+}
+
+.cart-header{
+  padding: 0 0 36px 48px;
+}
+.cartcontent{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.cart-items{
+  flex: 1;
+  overflow-x: hidden;
+  padding:0 48px;
+}
+
+
+.close-button-container{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+  img{
+    transition: 100ms ease-out;
+    cursor: pointer;
+  }
+}
+
+.close-button-container img:hover{
+  opacity: 60%;
+}
