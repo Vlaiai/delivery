@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route,Routes} from 'react-router-dom'
-import 'macro-css'; 
+import 'macro-css';
 import {useDispatch, useSelector} from 'react-redux'
 import {setCategoryId} from './redux/slices/filterSlice'
 import Header from './components/header/Header'
