@@ -182,6 +182,10 @@ header{
   .menu-button{
     display: block;
   }
+  .menu-button:active{
+    opacity: 50%;
+  }
+
   .header-contacts{
     display: none;
   }
