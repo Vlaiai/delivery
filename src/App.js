@@ -104,7 +104,8 @@ function App() {
           <div className='main-content-conteiner'>
             <Categories 
             items={items}
-            onAddToCard={onAddToCard}      
+            onAddToCard={onAddToCard} 
+            onClickBack={onClickCategory}     
             /> 
           </div>
         </div>

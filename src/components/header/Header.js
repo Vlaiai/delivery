@@ -25,7 +25,7 @@ function Header({onClickCart,cartOpened}){
 
   const onChangeSearchInput = (event) =>{
     setValue(event.target.value)
-    updateSearchValue(event.target.value)}
+    updateSearchValue(event.target.value.toLowerCase())}
 
 
   const totalCount = items.reduce((sum, item)=>

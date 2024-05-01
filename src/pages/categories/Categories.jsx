@@ -8,7 +8,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import {setTagId,setCategoryId} from '../../redux/slices/filterSlice'
 
 
-function Categories({items,onAddToCard})
+function Categories({items,onClickBack})
 { 
 
 
@@ -16,9 +16,9 @@ function Categories({items,onAddToCard})
     const tagId = useSelector(state=>state.filter.tagId)
     const categoryIndex = useSelector(state => state.filter.categoryId)
 
-    const onClickBack = ()=>{
-      dispatch(setCategoryId(null))
-    }
+    // const onClickBack = ()=>{
+    //   dispatch(setCategoryId(null))
+    // }
 
     const onClickTag = (index)=>{
       dispatch(setTagId(index))
@@ -53,14 +53,12 @@ function Categories({items,onAddToCard})
             <b>Snacks</b>
           </div>
 
-          <Link
-           className='link-style'
-           to="/salads">
+
             <div className="main-menu-section">
               <img src="img/menu/2.png" alt=""/>
               <b>Salads</b>
             </div>
-          </Link>
+
          
 
           <div className="main-menu-section">
@@ -101,12 +99,10 @@ function Categories({items,onAddToCard})
        </div> 
         : 
        <div>
-         <Link className='link-style' to="/">
-          <div onClick={onClickBack} className="arrow-back-div">
+          <div onClick={() => onClickBack(null)}  className="arrow-back-div">
             <Arrow/>
             <b>Back</b>
           </div>
-        </Link>
         <h1 className="title-section">{title}</h1>
         <div className="tags-container">
           <div className="hashtags">
