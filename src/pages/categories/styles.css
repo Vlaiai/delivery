@@ -22,13 +22,13 @@
 
 /* MAIN MENU */
 
-.main-menu{
+/* .main-menu{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 24px;
   row-gap: 24px;
   padding: 24px 0 56px 0;
-}
+} */
 
 .main-menu-section{
   display: flex;
@@ -37,6 +37,13 @@
   gap: 8px;
 }
 
+.margin-scroll-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+  padding: 24px 0 56px 0;
+}
 
 /* HASHTAGS */
 
@@ -108,7 +115,7 @@
 
   .main-menu{
    display: flex;
-   margin: 0 20px;
+   margin-right: 20px;
   }
 
   .main-menu-section{
@@ -123,8 +130,8 @@
 
   .margin-scroll-cont{
     display: flex;
-    padding-right: 20px;
     gap: 20px;
+    padding: 48px 20px ;
   }
 
   .slider{
