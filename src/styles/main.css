@@ -99,19 +99,15 @@ a{
 
 @media(max-width:480px){
   .content{
+    justify-content: center;
     margin-left: 0;
     margin-top: 102px;
-    padding: 0 20px 80px 20px;
+    padding: 0 0 80px 0;
+  }
+  
+  .main-content-conteiner{
+    width: 100%;
   }
 
-  .positions-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 32px;
-  }
 
-  .title-section{
-  margin-bottom: 32px;
-  }
 }

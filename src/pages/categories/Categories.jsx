@@ -41,60 +41,63 @@ function Categories({items,onClickBack})
         
         {categoryIndex === null ?
        <div>
-          <div className="slider">
+        <div className="slider">
           <div className="slider-container">
             <img src="img/slider/1.png" alt=""/>
           </div>
         </div>
 
-        <div className="main-menu">
-          <div className="main-menu-section">
-            <img src="img/menu/1.png" alt=""/>
-            <b>Snacks</b>
-          </div>
-
-
-            <div className="main-menu-section">
-              <img src="img/menu/2.png" alt=""/>
-              <b>Salads</b>
+        <div className='main-menu-container'>
+          <div className="main-menu">
+            <div className='margin-scroll-cont'>
+              <div className="main-menu-section">
+                <img src="img/menu/1.png" alt=""/>
+                <b>Snacks</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/2.png" alt=""/>
+                <b>Salads</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/3.png" alt=""/>
+                <b>Rolls</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/4.png" alt=""/>
+                <b>Wok and pasta</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/5.png" alt=""/>
+                <b>Street food</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/6.png" alt=""/>
+                <b>Soups</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/7.png" alt=""/>
+                <b>Hot Dishes</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/9.png" alt=""/>
+                <b>Drinks</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/10.png" alt=""/>
+                <b>Breakfasts</b>
+              </div>
+              <div className="main-menu-section">
+                <img src="img/menu/11.png" alt=""/>
+                <b>Sauces</b>
+              </div>
             </div>
-
-         
-
-          <div className="main-menu-section">
-            <img src="img/menu/3.png" alt=""/>
-            <b>Rolls</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/4.png" alt=""/>
-            <b>Wok and pasta</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/5.png" alt=""/>
-            <b>Street food</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/6.png" alt=""/>
-            <b>Soups</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/7.png" alt=""/>
-            <b>Hot Dishes</b>
-          </div>
-          
-          <div className="main-menu-section">
-            <img src="img/menu/9.png" alt=""/>
-            <b>Drinks</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/10.png" alt=""/>
-            <b>Breakfasts</b>
-          </div>
-          <div className="main-menu-section">
-            <img src="img/menu/11.png" alt=""/>
-            <b>Sauces</b>
+           
           </div>
         </div>
+
+        
+
+
         <h1 className="title-section">Popular</h1>
        </div> 
         : 
@@ -119,17 +122,19 @@ function Categories({items,onClickBack})
        </div>
       }
        
-        
-        <div className="positions-grid">
-          {items.filter(item => item.title.toLowerCase().includes(searchValue)).map((obj)=>(
-            <Card
-            key={obj.id}
-              {...obj}
-            />
-            )
-            )
-            }
+        <div className="positions-container">
+          <div className="positions-grid">
+            {items.filter(item => item.title.toLowerCase().includes(searchValue)).map((obj)=>(
+              <Card
+              key={obj.id}
+                {...obj}
+              />
+              )
+              )
+              }
+          </div>
         </div>
+        
      </div>
     )
   }

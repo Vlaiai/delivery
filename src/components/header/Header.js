@@ -66,6 +66,7 @@ function Header({onClickCart,cartOpened}){
          value={value}
          placeholder="Caesar salad"
         />
+        
 
         { value ? <img 
             onClick={ clearSearch }
@@ -82,7 +83,15 @@ function Header({onClickCart,cartOpened}){
         
        </div>
 
-       {/* <img src="/img/search.svg" alt="searchicon"/> */}
+       <div className='mob-search-container'>
+            <img 
+              height={36}
+              width={36}
+              src="img/search.svg" alt="Search"
+            />
+        </div>
+
+       {/* <img src="img/search.svg" alt="searchicon"/> */}
 
        <div 
        className="cart-container"

@@ -32,7 +32,8 @@ header{
   gap:12px;
 }
 
-.menu-button{
+.menu-button,
+.mob-search-container{
   display: none;
 }
 
@@ -176,22 +177,30 @@ header{
     margin: 0 auto;
   }
 
-  .logo{
-    height: 38px;
-  }
   .menu-button{
     display: block;
+    transition: ease-out 100ms;
   }
   .menu-button:active{
     opacity: 50%;
   }
 
-  .header-contacts{
-    display: none;
+  .logo{
+    height: 38px;
   }
+ 
+ .mob-search-container{
+  display: flex;
+  transition: ease-out 100ms;
+ }
+ .mob-search-container:active{
+  opacity: 50%;
+ }
 
-  .cart-header{
-    display: none;
-  }
+  .cart-container,
+  .header-contacts,
+  .search-container,
+  .cart-header
+   {display: none;}
 }
 

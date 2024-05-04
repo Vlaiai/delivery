@@ -69,16 +69,23 @@ width: 100%;
 
 @media(max-width: 480px){
   .card{
-    min-width: 150px;
-    img {
-      width: 100%;
-      border-radius: 12px;
-    }
+    width: 150px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     p{
       color: #A7A7A7;
     }
     div{
       margin: 12px 0 
     }
+  }
+
+  .card-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
   }
 }

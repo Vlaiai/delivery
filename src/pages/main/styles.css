@@ -4,27 +4,4 @@
 
 
 
-/* SLIDER */
-.slider-container{
-  height: 383px;
-  width: 936px;
-  border-radius: 12px;
-  overflow: hidden;
-}
 
-/* MAIN MENU */
-
-.main-menu{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 24px;
-  padding: 24px 0 56px 0;
-}
-
-.main-menu-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
